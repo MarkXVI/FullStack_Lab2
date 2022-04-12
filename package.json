@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --mode development",
+    "start": "webpack-dev-server --mode development --open",
+    "server": "node src/server/server.js",
+    "concurrently": "concurrently \"webpack-dev-server --mode development --open\" \"node src/server/server.js\"",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -25,10 +27,17 @@
     "babel-loader": "^8.2.4",
     "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "signale": "^1.4.0"
   }
 }
