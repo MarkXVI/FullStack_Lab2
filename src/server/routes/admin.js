@@ -5,7 +5,7 @@ const Student = require('../models/Student');
 const Registration = require('../models/Registration');
 
 router.get('/', (req, res) => {
-    res.send('API')
+    res.send('Admin')
 });
 
 router.get('/courses', (req, res) => {
@@ -16,7 +16,7 @@ router.get('/students', (req, res) => {
     res.send('students');
 });
 
-router.post('/register', (req, res) => {
+router.get('/register', (req, res) => {
     res.send('registered')
 });
 
