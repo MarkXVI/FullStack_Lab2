@@ -1,6 +1,6 @@
 import React from "react"; 
 import ReactDOM from "react-dom"; 
-import App from "./__app";
+import App from "./app";
  
 function Welcome(props) { 
   return <h1>Hello, {props.name}</h1>; 
