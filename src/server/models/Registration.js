@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const registrationSchema = mongoose.Schema({
     student_id: {
-        type: Number
+        type: String
     },
     course_code: {
         type: Number

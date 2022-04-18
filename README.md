@@ -7,7 +7,7 @@ After that the application can be run
 ```
 npm run start
 ```
-Now you can open the site at [Localhost port 3000 link](http://localhost:3000/).
+Now you can open the site at [Localhost port 8080 link](http://localhost:8080/).
 
 add to .env file
 

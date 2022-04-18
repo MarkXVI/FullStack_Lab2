@@ -14,14 +14,12 @@ mongoose.connect(process.env.DB_URL, { useUnifiedTopology: true, useNewUrlParser
 });
 
 const api = require('./routes/api');
-const admin = require('./routes/admin');
 
 app.use(express.json());
 app.use(cors());
 
 app.use(express.static('../../dist/'));
 app.use("/api", api);
-app.use("/admin", admin);
 
 app.listen(PORT, () => {
     signale.info(`Sever listening on port: ${PORT}`);
