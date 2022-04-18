@@ -33,7 +33,6 @@
     "webpack-dev-server": "^4.8.1"
   },
   "dependencies": {
-    "ajax": "^0.0.4",
     "concurrently": "^7.1.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.0",
