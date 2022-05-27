@@ -2,7 +2,7 @@
 Lab1, fullstack development course
 
 ## Your computer
-1. Clone the repository and install the nessecary npm modules from the package.json file.
+Clone the repository and install the nessecary npm modules from the package.json file.
 
 After that the application can be run with:
 ```
