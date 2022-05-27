@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
     "server": "node src/server/server.js",
-    "concurrently": "concurrently \"webpack-dev-server --mode development --open\" \"node src/server/server.js\"",
+    "open": "concurrently \"npm run start\" \"node src/server/server.js\"",
     "build": "webpack --mode production"
   },
   "repository": {

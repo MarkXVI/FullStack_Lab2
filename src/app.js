@@ -173,13 +173,13 @@ const MakeRegistrationTable = (props) => {
                             className={getClassNamesFor('course_code')}
                         > Course Code </button>
                     </th>
-                    <th>
+                    {/* <th>
                         <button
                             type="button"
                             onClick={() => requestSort('unix_timestamp')}
                             className={getClassNamesFor('unix_timestamp')}
                         > Student Sign Up Time and Date </button>
-                    </th>
+                    </th> */}
                 </tr>
             </thead>
             <tbody>
@@ -187,7 +187,7 @@ const MakeRegistrationTable = (props) => {
                     <tr key={item.student_id}>
                         <td>{item.student_id}</td>
                         <td>{item.course_code}</td>
-                        <td>{item.unix_timestamp}</td>
+                        {/* <td>{item.unix_timestamp}</td> */}
                     </tr>
                 ))}
             </tbody>
@@ -202,12 +202,12 @@ export default function App() {
     return (
         <div className="App">
 
-            <MakeStudentTable
+            {/* <MakeStudentTable
                 data = {localStorage.getItem('students')}
             />
             <MakeCourseTable
                 data = {localStorage.getItem('courses')}
-            />
+            /> */}
             <MakeRegistrationTable
                 data = {localStorage.getItem('registrations')}
             />
